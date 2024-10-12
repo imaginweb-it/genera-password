@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+ <head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>Password Generator by Imaginweb</title>
+  
+  <meta name="Generator" content="Vim 7.4 (Vi IMproved editor; http://www.vim.org/)">
+  <meta name="Author" content="Giuseppe Guida - imaginweb">
+  <meta name="Copyright" content="Copyright (C) Settembre, 2014 ">
+  <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+  
+
+  <link rev="made" href="mailto:info@imaginweb.it">
+  <link rel="stylesheet" type="text/css" href="css/format.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script type="text/javascript" src="script/pwd.js"></script>
+  <script type="text/javascript" src="script/parameters.js"></script>
+</head>
+<body onload="localization();" onresize="responsive();">
+<form action="">
+	<div id="blockTOP">
+		<img src="images/logo.jpg" alt="logo GeneraPassword" title="logo GeneraPassword">
+		<div class="titleheader">GeneraPassword</div>
+	</div>
+	<div id="blockTOP1">
+		<a href="http://www.imaginweb.it" target="blank"><img src="images/logo-imaginweb.png" alt="logo Imaginweb" title="logo Imaginweb" class="logo_imaginweb"></a>
+	</div>
+	<div id="blockCENTER">
+		<div class="secret_key">
+			<span>Secret key</span><br /><br / class="label_adaptation"><input type="password" id="key" name="key" title="Enter a secret key" size="12" onkeyup="password()"> <img src="images/eye.png" alt="show" title="show" onclick="show('key')">
+		</div>
+		<div class="password">
+			<span>Password</span><br /><br / class="label_adaptation"><input type="password" id="pwd" name="pwd" title="Enter your password" size="12" onkeyup="password()"> <img src="images/eye.png" alt="show" title="show" onclick="show('pwd')">
+		</div>
+		<div class="code_length">
+			<span id="lc">Code length</span><br /><input type="text" name="codelenght" value="8" title="Code length" size="2" maxlength="2" onkeypress="return(checkInput(this, event));" onpaste="return(false);" onkeyup="password();">
+		</div>
+		<div class="characters">
+			<span>Characters</span>
+			<select name="characters" onchange="password()" title="Group of characters">
+				<option value="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</option>
+				<option value="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</option>
+				<option value="1234567890">1234567890</option>
+				<option value="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&*()_-+={}|[]\:;<>?,./">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&*()_-+={}|[]\:;<>?,./</option>
+			</select>
+		</div>
+	</div>
+	<div id="blockBOTTOM">
+		<span>Code</span><br /> 
+		<input type="text" id="code" name="code" value="" class="codeH" title="Code generated - Click on the field and copy with CTRL-C or Command-C or using the mouse" size="50" onfocus="password();this.select()" onclick="password();this.select()"><br /><span id="show" title="View the generated code" onclick="showcode()">Show</span>
+	</div>
+	<a href="help.html" id="help" target="blank"><img src="images/generapassword_help.png" alt="Help" class="help" title="Help"></a>
+	<a href="donate.html" id="donate" target="blank"><img src="images/donate.gif" alt="Donate" class="donate" title="Donate"><img src="images/donate-static.gif" alt="Donate" class="donateH" title="Donate"></a>
+</form>
+<div id="footer"><span class="titlefooter">GeneraPassword</span><a href="http://www.imaginweb.it/generapassword/copyright-generapassword.html" title="Copyright Notice" target="_blank" id="copyright">&copy;</a><span class="titlefooter"> 2014 </span><a href="http://www.imaginweb.it" title="Author Imaginweb" target="_blank">Imaginweb</a><br /><span>Create a password using a combination of the two keys entered by choosing between the characters shown.</span>
+</div>
+</body>
+</html>

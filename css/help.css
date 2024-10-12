@@ -1,0 +1,177 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+body {
+	background-color: #021C09;
+	color: #3FFF6B;
+	font-family: arial, tahoma, sans-serif;
+	height: 100%;
+	overflow: auto;
+
+}
+#contents {
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+}
+.first {
+	padding: 15% 0 0;
+}
+@media screen and (min-aspect-ratio: 1/1) {
+#contents {
+	width: 85%;
+}
+#blockTOP {
+	width: 100%;
+	position: absolute;
+	height: 25%;
+	left: -40%;
+	top: 10%;
+	max-height: 4em;
+	padding: 1% 0;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg); 
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+#blockTOP1 {
+	background-color: #008000;
+	border-style: solid;
+	border-width: 1px 0;
+	opacity: 0.3;
+	position: absolute;
+	width: 100%;
+	height: 25%;
+	left: -40%;
+	top: 10%;
+	max-height: 4em;
+	padding: 1% 0;
+	z-index: -100;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg); 
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+#contents p {
+	padding: 0 0 0 20%;
+}
+#contents blockquote {
+	margin: 0 3% 0 23%;
+}
+}
+#blockTOP img {
+	padding: 0 2% 0 5%;
+	height: 90%;
+	vertical-align: middle;
+	max-height: 4em;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+#contents {
+	width: 70%;
+	max-width: 700px;
+}
+#blockTOP {
+	width: 100%;
+	position: absolute;
+	height: 18%;
+	max-height: 4em;
+	padding: 1% 0;
+}
+#blockTOP1 {
+	background-color: #008000;
+	border-style: solid;
+	border-width: 1px 0;
+	opacity: 0.3;
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	max-height: 4em;
+	padding: 1% 0;
+	z-index: -100;
+}
+}
+.titleheader {
+	display: inline;
+	font-size: 2em;
+	font-weight: bold;
+	text-shadow: 0.1em 0.1em 0.03em #191970;
+	filter:DropShadow(Color=#191970, OffX=2, OffY=2);
+}
+@media only screen and (max-width: 510px) {
+.titleheader {
+	font-size: 1.5em;
+}
+#blockTOP img {
+	height: 70%;
+}
+.first {
+	padding: 20% 0 0;
+}
+}
+@media only screen and (max-height: 400px) {
+.titleheader {
+	font-size: 1.5em;
+}
+}
+@media only screen and (max-width: 400px) {
+.titleheader {
+	font-size: 1.2em;
+}
+.first {
+	padding: 25% 0 0;
+}
+}
+#contents p {
+	line-height: 1.5em;
+	text-align: justify;
+}
+#contents span b {
+	background-color: #004C02;
+	color: #93FF97;
+	font-size: 1.05em;
+	border: 0.1em inset #808080;
+	padding: 0 10px;
+}
+#contents span {
+	font-size: 0.7em;
+}
+#contents blockquote {
+	background-color: #064215;
+	color: #93FF97;
+	font-size: 0.9em;
+	font-style: italic;
+	padding: 0 2%;
+}
+#show {
+	font-size: 65%;
+	color: #D57100;
+}
+div.donate {
+	padding: 0 0 0 20%;
+}
+.donate {
+	font-size: 1.5em;
+}
+.paypal {
+	font-weight: bold;
+	color: #009CDE;
+	text-align: center;
+}
+.greenaddress {
+	font-weight: bold;
+	color: #DAEFDA;
+	text-align: center;
+}
+form {
+	text-align: center;
+	padding: 2%;
+}
+.greenaddress img {
+	padding: 2%;
+}
