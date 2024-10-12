@@ -1,4 +1,4 @@
-# genera-password
+# Genera Password
 Crea una password mediante la combinazione delle due chiavi immesse scegliendo tra i una selezione di caratteri.
 ## Help
 **GeneraPassword** è una applicazione gratuita per creare password complesse partendo da chiavi semplici e facilmente ricordabili.  
